@@ -1,3 +1,4 @@
+# AutoDev Factory - Complete Requirements
 # Core Dependencies
 pydantic>=2.0.0
 pydantic-settings>=2.0.0
@@ -7,29 +8,65 @@ langchain>=0.1.0
 langchain-openai>=0.0.5
 langchain-anthropic>=0.1.0
 langchain-community>=0.0.10
+langgraph>=0.0.20
 crewai>=0.30.0
 openai>=1.10.0
 anthropic>=0.18.0
 
-# Web Framework
-fastapi>=0.109.0
-uvicorn[standard]>=0.27.0
-httpx>=0.26.0
+# Web Scraping & Research
+requests>=2.31.0
+beautifulsoup4>=4.12.3
+lxml>=5.1.0
+feedparser>=6.0.10
+selenium>=4.15.0
+playwright>=1.40.0
+google-search-results>=2.4.0
+tweepy>=4.14.0
+praw>=7.7.0  # Reddit API
 
 # GitHub Integration
 PyGithub>=2.1.0
 gitpython>=3.1.40
 
-# Database
+# Database & ORM
 sqlalchemy>=2.0.25
+alembic>=1.13.0
 psycopg2-binary>=2.9.9
 redis>=5.0.1
 chromadb>=0.4.22
 
-# Testing
+# Web Frameworks
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+flask>=3.0.0
+django>=5.0.0
+httpx>=0.26.0
+
+# Testing Frameworks
 pytest>=7.4.4
 pytest-asyncio>=0.23.3
 pytest-cov>=4.1.0
+selenium>=4.15.0
+playwright>=1.40.0
+
+# Code Analysis & Formatting
+black>=23.12.1
+flake8>=7.0.0
+isort>=5.13.0
+mypy>=1.8.0
+bandit>=1.7.5  # Security scanning
+safety>=3.0.0  # Dependency security
+
+# Cloud & Deployment
+boto3>=1.34.34  # AWS
+google-cloud>=0.34.0
+azure-identity>=1.15.0
+docker>=7.0.0
+kubernetes>=28.1.0
+
+# Payment & Monetization
+stripe>=7.8.0
+paypalrestsdk>=1.13.0
 
 # Utilities
 python-dotenv>=1.0.0
@@ -38,28 +75,33 @@ jinja2>=3.1.3
 click>=8.1.7
 rich>=13.7.0
 tqdm>=4.66.1
+toml>=0.10.2
 
 # Async Support
 aiohttp>=3.9.1
 asyncio>=3.4.3
 
-# Code Analysis
-black>=23.12.1
-flake8>=7.0.0
-mypy>=1.8.0
-
-# Docker Support (optional)
-docker>=7.0.0
+# Data & Analytics
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
 
 # Monitoring & Logging
 loguru>=0.7.2
 prometheus-client>=0.19.0
 
-# Trend Research
-beautifulsoup4>=4.12.3
-lxml>=5.1.0
-feedparser>=6.0.10
+# Documentation
+mkdocs>=1.5.0
+sphinx>=7.2.0
 
-# Deployment Helpers
-boto3>=1.34.34  # AWS
-vercel-sdk>=0.1.0  # Vercel (if available)
+# Chrome Extension Tools
+selenium-wire>=5.2.0
+
+# Security
+cryptography>=41.0.0
+
+# Message Queue
+celery>=5.3.0
+
+# Graph Database (for Knowledge Graph)
+neo4j>=5.0.0
